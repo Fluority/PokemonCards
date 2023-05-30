@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PokemonViewController.swift
 //  PokemonCards
 //
 //  Created by liene.krista.neimane on 21/04/2023.
@@ -55,16 +55,12 @@ class PokemonViewController: UIViewController {
                 print("error:::::" , error)
             }
             
-            
         }.resume()
-        
     }
-    
-    
 }
 
+
 extension PokemonViewController: UITableViewDelegate, UITableViewDataSource {
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pokey.count
@@ -96,5 +92,5 @@ extension PokemonViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    
 }
+
